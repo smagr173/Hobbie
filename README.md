@@ -8,4 +8,4 @@ The images below are screenshots of the home screen, menu, expanded menu item, a
  Includes reusable functional components
  Shown below scrollable filter list and search bar
  
- ![DiscoverScreen](https://johndan2354.github.io/hobbieImages/HobbieScreenshots/popular.PNG)
+ ![popular](https://johndan2354.github.io/hobbieImages/HobbieScreenshots/popular.PNG)
