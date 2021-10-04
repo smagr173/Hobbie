@@ -8,4 +8,4 @@ The images below are screenshots of the home screen, menu, expanded menu item, a
  Includes reusable functional components
  Shown below scrollable filter list and search bar
  
-![HomeScreen](https://johndan2354.github.io/BBMobileImages/Collection.PNG)![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
+![HomeScreen](https://johndan2354.github.io/BBMobileImages/Home.PNG)![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
