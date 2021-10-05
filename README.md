@@ -3,4 +3,5 @@ This repository contains the code and information for the BBMobile app. This pro
 This project was created using React Native for the front-end components, which involves JavaScript libraries. Meanwhile, the React Native code connects to a PHP back-end where the SQL database is then accessed.<br>
 The images below are screenshots of the home screen, menu, expanded menu item, and cart screen.
 <div><br><div>
-![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG)  ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
+  
+![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG)![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
