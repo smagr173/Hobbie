@@ -1,7 +1,7 @@
 # Hobbie Mobile App
 Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Table of Contents
-1.&#9;[Overview](#overview)
+&#9;[Overview](#overview)
 <a name="overview"/>
 ## Overview
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices. There are four major features of the app
