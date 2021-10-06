@@ -3,6 +3,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Table of Contents
 &nbsp; &nbsp;1. [Overview](#overview)
 <a name="overview"/>
+<br/>
 &nbsp; &nbsp;2. [Functional Component Showcase](#functComp)
 <a name="functComp"/>
 ## Overview
