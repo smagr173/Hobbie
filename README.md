@@ -3,6 +3,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Table of Contents
 &nbsp; &nbsp;1. [Overview](#overview)
 <a name="overview"/>
+<br/>
 &nbsp; &nbsp;2. [Functional Component Showcase](#funct)
 <a name="funct"/>
 ## Overview
@@ -20,3 +21,13 @@ The images below are screenshots of the map, discover, and home screen<br/>
 The images below are screenshots of the map, discover, and home screen<br/>
 <br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
+  
+Sizes well across various screen sizes and devices, including tablets
+Includes reusable functional components, including a search bar and scrollable filter list
+Makes use of React Hooks  
+Sizes well across various screen sizes and devices, including tablets
+Includes reusable functional components, including a search bar and scrollable filter list
+Makes use of React Hooks  
+Sizes well across various screen sizes and devices, including tablets
+Includes reusable functional components, including a search bar and scrollable filter list
+Makes use of React Hooks
