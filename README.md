@@ -11,4 +11,4 @@ Makes use of React Hooks
 
 The images below are screenshots of the map, discover, and home screen.
 
-  ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG)  ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
+<div>-----<div>![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG)  ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
