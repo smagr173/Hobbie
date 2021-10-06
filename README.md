@@ -7,5 +7,6 @@ Sizes well across various screen sizes and devices, including tablets
 Includes reusable functional components, including a search bar and scrollable filter list
 Makes use of React Hooks
 
-The images below are screenshots of the map, discover, and home screen<div><br><div>
+The images below are screenshots of the map, discover, and home screen
+&nbsp;
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
