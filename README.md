@@ -4,8 +4,8 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 &nbsp; &nbsp;1. [Overview](#overview)
 <a name="overview"/>
 <br/>
-&nbsp; &nbsp;2. [Functional Component Showcase](#functComp)
-<a name="functComp"/>
+&nbsp; &nbsp;2. [Functional Component Showcase](#funct)
+<a name="funct"/>
 ## Overview
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices. There are four major features of the app
   
