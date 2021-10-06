@@ -8,4 +8,5 @@ Includes reusable functional components, including a search bar and scrollable f
 Makes use of React Hooks
 
 The images below are screenshots of the map, discover, and home screen\
+<br />
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
