@@ -1,4 +1,4 @@
-# Hobbie Mobile App
+# Hobbie Mobile App &nbsp; &nbsp; &nbsp;Create, share, and discover collections of rare or noteworthy possessions
 &nbsp; &nbsp; &nbsp;Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Table of Contents
 &nbsp; &nbsp; &nbsp;1. [Overview](#overview)
