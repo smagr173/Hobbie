@@ -19,6 +19,7 @@ The final feature is an activity feed that displays events from the user's own u
 For image captions, point out behavior. For example, “As the user scrolls, the search bar is hidden or displayed, depending on the direction.”
 
 Sizes well across various screen sizes and devices, including tablets<br/>
+Section for what I learned from this project, animations, redux, hooks. Limitations of javascript, need for native code<br/>
 Makes use of React Hooks<br/>
 
 The images below are screenshots of the map, discover, and home screen<br/>
