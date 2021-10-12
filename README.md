@@ -12,14 +12,13 @@ There are four major features of the app aside from the user authentication. The
 
 Secondly, the user can explore new items from the community database. This screen features a grid of images that can be viewed and expanded. A list of filters at the top of the screen allows the user to select what type of item is displayed. Anything from comic books to model trains can be selected. The user can also look for other members or groups using the search bar component at the top.
 
-Next, a map feature was implemented allowing the user to locate nearby auction houses, yard sales, hobby stores, and flea markets. The type of locations displayed can be selected using a list of pressable filters. Alternatively, a search bar can be used to find a specific business or location. These features are actually reusable functional components used in the discover screen as well. Further discussion about these reusable components can be found here. (ADD LINK)
+Next, a map feature was implemented allowing the user to locate nearby auction houses, yard sales, hobby stores, and flea markets. The type of locations displayed can be selected using a list of pressable filters. Alternatively, a search bar can be used to find a specific business or location. These features are actually reusable functional components used in the discover screen as well. Further discussion about these reusable components can be found here. [Functional Component Showcase](#functcomp)
 
 The final feature is an activity feed that displays events from the user's own usage or any accounts the user has followed. This includes any new additions to a collection, item trades, locations visited, and milestones reached.
 
 For image captions, point out behavior. For example, “As the user scrolls, the search bar is hidden or displayed, depending on the direction.”
 
 Sizes well across various screen sizes and devices, including tablets<br/>
-Includes reusable functional components, including a search bar and scrollable filter list<br/>
 Makes use of React Hooks<br/>
 
 The images below are screenshots of the map, discover, and home screen<br/>
