@@ -29,6 +29,7 @@ The images below are screenshots of the map, discover, and home screen<br/>
 ## Reusable Components Explained
 Makes use of a given list of categories to render selectable buttons. A reusable component is imported which can be used in other screens.
 ```javascript
+// App.js
 import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 
