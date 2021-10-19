@@ -60,4 +60,31 @@ const App = () => {
   );
 };
 ```
+### Imported Component
+```javascript
+import React from 'react';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 
+const ListFilters = (props) => {
+  return (
+    <TouchableOpacity onPress={props.onPress} style={styles.button}>
+      <Text style={[ styles.buttonText, { color: props.textColor } ]}>
+        {props.category}
+      </Text>
+    </TouchableOpacity>
+  );
+};
+
+export default ListFilters;
+
+const styles = StyleSheet.create({
+  buttonText: {
+    fontSize: 16,
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 10
+  },
+});
+```
