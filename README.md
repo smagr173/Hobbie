@@ -62,7 +62,7 @@ const App = () => {
   );
 };
 ```
-##### ListFilters.js
+##### Imported Component - ListFilters
 Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red.
 ```javascript
 // ListFilters.js
