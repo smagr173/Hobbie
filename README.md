@@ -6,7 +6,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 &nbsp; &nbsp;2. [Reusable Components Explained](#functcomp)
 <a name="overview"/>
 ## Project Overview
-Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
+Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
 
 There are four major features of the app aside from the user authentication. The first of which allows the user to catalog and view their personal collections. Items can be added or removed as the user builds their physical collection. These collections are then displayed in a stack layout which the user can swipe through. The user can also manage their profile from this screen.
 
