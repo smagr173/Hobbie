@@ -28,13 +28,8 @@ The images below are screenshots of the map, discover, and home screen<br/>
 <a name="functcomp"/>
 ## Reusable Components Explained
 ```javascript
-/*  Filename:   App.js                                              */
-/*  Purpose:    Makes use of a given list of categories to render   */
-/*              selectable buttons. A reusable component is         */
-/*              imported which can be used in other screens.        */
-
 import React, { useState } from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 
 import { data } from '../data';
 import ListFilters from '../components/ListFilters';
@@ -56,29 +51,13 @@ const App = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <FlatList
-        horizontal={true}
-        data={data}
-        renderItem={renderList}
-        keyExtractor={(item) => item.id}
-        ListFooterComponent={<View style={styles.outerPadding}/>}
-        ListHeaderComponent={<View style={styles.outerPadding}/>}
-      />
-    </View>
+    <FlatList
+      horizontal={true}
+      data={data}
+      renderItem={renderList}
+      keyExtractor={(item) => item.id}
+    />
   );
 };
-
-export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  outerPadding: {
-    height: '100%',
-    width: 15,
-  },
-});
 ```
 
