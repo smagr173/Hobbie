@@ -65,6 +65,7 @@ const App = () => {
 ##### ListFilters.js
 Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red.
 ```javascript
+// ListFilters.js
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
