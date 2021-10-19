@@ -74,4 +74,6 @@ const ListFilters = (props) => {
     </TouchableOpacity>
   );
 };
+
+export default ListFilters;
 ```
