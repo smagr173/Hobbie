@@ -27,3 +27,63 @@ The images below are screenshots of the map, discover, and home screen<br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
 <a name="functcomp"/>
 ## Reusable Components Explained
+```javascript
+/********************************************************************/
+/*  Author:     Stephen Magrowski                                   */
+/*  Created:    October 18, 2021                                    */
+/*  Filename:   App.js                                              */
+/*  Purpose:    Makes use of a given list of categories to render   */
+/*              selectable buttons. A reusable component is         */
+/*              imported which can be used in other screens.        */
+/*                                                                  */
+/********************************************************************/
+
+import React, { useState } from 'react';
+import { StyleSheet, View, FlatList } from 'react-native';
+
+import { data } from '../data';
+import ListFilters from '../components/ListFilters';
+
+const App = () => {
+  // Holds the unique identifier of the selected button
+  const [selected, setSelected] = useState('1');
+
+  const renderList = ({ item }) => {
+    // If the current item in the list is selected then text color is set to 'red'
+    const textColor = item.id === selected ? 'red' : 'gray';
+    return (
+      <ListFilters 
+        category={item.title}
+        textColor={textColor}
+        onPress={() => setSelected(item.id)}
+      />
+    );
+  };
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        horizontal={true}
+        data={data}
+        renderItem={renderList}
+        keyExtractor={(item) => item.id}
+        ListFooterComponent={<View style={styles.outerPadding}/>}
+        ListHeaderComponent={<View style={styles.outerPadding}/>}
+      />
+    </View>
+  );
+};
+
+export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  outerPadding: {
+    height: '100%',
+    width: 15,
+  },
+});
+```
+
