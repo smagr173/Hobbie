@@ -28,15 +28,10 @@ The images below are screenshots of the map, discover, and home screen<br/>
 <a name="functcomp"/>
 ## Reusable Components Explained
 ```javascript
-/********************************************************************/
-/*  Author:     Stephen Magrowski                                   */
-/*  Created:    October 18, 2021                                    */
 /*  Filename:   App.js                                              */
 /*  Purpose:    Makes use of a given list of categories to render   */
 /*              selectable buttons. A reusable component is         */
 /*              imported which can be used in other screens.        */
-/*                                                                  */
-/********************************************************************/
 
 import React, { useState } from 'react';
 import { StyleSheet, View, FlatList } from 'react-native';
