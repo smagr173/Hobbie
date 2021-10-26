@@ -12,9 +12,11 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 &nbsp; &nbsp;4. [Final Thoughts](#finalthoughts)
 <br/>
+
 <a name="showcase"/>
 ## Showcase
-<br/><br/>
+<br/>
+
 <a name="description"/>
 ## Project Description
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
@@ -68,7 +70,7 @@ const App = () => {
   );
 };
 ```
-Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives this data as props.
+Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives this data as props.<br/>
 ```javascript
 // ListFilters.js
 import React from 'react';
@@ -88,7 +90,6 @@ export default ListFilters;
 ```
 
 <a name="finalthoughts"/>
-
 ## Final Thoughts
 Since this was an independent project I took on many different roles in the development process. It was up to me to gather requirements and to select the tools needed. A lot of time went into the design and creating detailed mockups. This is crucial for the implementation phase when the focus should be on writing good code, not on how the app should look.<br/>
 <br/>
