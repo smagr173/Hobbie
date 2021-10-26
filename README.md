@@ -11,7 +11,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 &nbsp; &nbsp;3. [Reusable Component Demo](#demo)
 <br/>
 &nbsp; &nbsp;4. [Final Thoughts](#finalthoughts)
-
+<br/>
 <a name="showcase"/>
 ## Showcase
 <br/><br/>
