@@ -4,11 +4,17 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 - Makes use of React Hooks and functional components
 - Sizes well across various devices, including the new iPhone 13
 ## Table of Contents
-&nbsp; &nbsp;1. [Project Description](#description)
+&nbsp; &nbsp;1. [Showcase](#showcase)
 <br/>
-&nbsp; &nbsp;2. [Reusable Component Demo](#demo)
+&nbsp; &nbsp;2. [Project Description](#description)
 <br/>
-&nbsp; &nbsp;3. [Final Thoughts](#finalthoughts)
+&nbsp; &nbsp;3. [Reusable Component Demo](#demo)
+<br/>
+&nbsp; &nbsp;4. [Final Thoughts](#finalthoughts)
+
+<a name="showcase"/>
+## Showcase
+
 <a name="description"/>
 ## Project Description
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
