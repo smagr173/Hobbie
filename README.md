@@ -12,7 +12,6 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 &nbsp; &nbsp;4. [Final Thoughts](#finalthoughts)
 <br/>
-
 <a name="showcase"/>
 ## Showcase
 <br/>
