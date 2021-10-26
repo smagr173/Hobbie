@@ -5,7 +5,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 &nbsp; &nbsp;2. [Reusable Components Explained](#functcomp)
 <br/>
-&nbsp; &nbsp;3. [Final Thoughts](#final)
+&nbsp; &nbsp;3. [Final Thoughts](#finalthoughts)
 <a name="overview"/>
 ## Project Overview
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
@@ -78,7 +78,7 @@ const ListFilters = (props) => {
 export default ListFilters;
 ```
 
-<a name="final"/>
+<a name="finalthoughts"/>
 ## Final Thoughts
 Since this was an independent project I took on many different roles in the development process. It was up to me to gather requirements and to select the tools needed. A lot of time went into the design and creating detailed mockups. This is crucial for the implementation phase when the focus should be on writing good code, not on how the app should look.<br/>
 <br/>
