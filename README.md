@@ -4,6 +4,8 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 &nbsp; &nbsp;1. [Project Overview](#overview)
 <br/>
 &nbsp; &nbsp;2. [Reusable Components Explained](#functcomp)
+<br/>
+&nbsp; &nbsp;3. [Final Thoughts](#final)
 <a name="overview"/>
 ## Project Overview
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
@@ -17,11 +19,6 @@ Next, a map feature was implemented allowing the user to locate nearby auction h
 The final feature is an activity feed that displays events from the user's own usage or any accounts the user has followed. This includes any new additions to a collection, item trades, locations visited, and milestones reached.
 
 For image captions, point out behavior. For example, “As the user scrolls, the search bar is hidden or displayed, depending on the direction.”
-
-Sizes well across various screen sizes and devices, including tablets<br/>
-Section for what I learned from this project, animations, redux, hooks. Limitations of javascript, need for native code<br/>
-Makes use of React Hooks<br/>
-
 The images below are screenshots of the map, discover, and home screen<br/>
 <br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
@@ -80,10 +77,10 @@ const ListFilters = (props) => {
 
 export default ListFilters;
 ```
+<a name="final"/>
 ## Final Thoughts
 Since this was an independent project I took on many different roles in the development process. It was up to me to gather requirements and to select the tools needed. A lot of time went into the design and creating detailed mockups. This is crucial for the implementation phase when the focus should be on writing good code, not on how the app should look.<br/>
 <br/>
 During development real mobile devices were used, including the iPhone 8, X, 13, and a Samsung tablet. This allowed me to program the behavior of the app more effectively. There are obvious challenges that arise when dealing with a cross-platform framework. Support for certain properties or features will vary and may not work as intended. It was also difficult sizing the app appropriately for the various screen dimensions.<br/>
 <br/>
 Many new features were added to React when I first started this project. React Hooks were new to me at the time. These Hooks include useState, useEffect, and useRef. All of which are implemented in the project. I found the use of Hooks to be a great addition to React. My code is more efficient and looks cleaner than the equivalent class component. Other skills gained from this project include animations and Redux for state management. I familiarized myself with a handful of animation libraries so I could implement a hideable header and a search bar that can shrink/expand. The second tool, Redux, was very useful in the user authentication feature. Redux made it possible to store login data for use in other components that otherwise would not have a safe and reliable way to access said data.<br/>
-<br/>
