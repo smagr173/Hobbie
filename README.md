@@ -79,9 +79,7 @@ export default ListFilters;
 ```
 
 <a name="finalthoughts"/>
-
 ## Final Thoughts
-
 Since this was an independent project I took on many different roles in the development process. It was up to me to gather requirements and to select the tools needed. A lot of time went into the design and creating detailed mockups. This is crucial for the implementation phase when the focus should be on writing good code, not on how the app should look.<br/>
 <br/>
 During development real mobile devices were used, including the iPhone 8, X, 13, and a Samsung tablet. This allowed me to program the behavior of the app more effectively. There are obvious challenges that arise when dealing with a cross-platform framework. Support for certain properties or features will vary and may not work as intended. It was also difficult sizing the app appropriately for the various screen dimensions.<br/>
