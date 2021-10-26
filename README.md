@@ -16,6 +16,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Showcase
 <br/>
 <a name="description"/>
+
 ## Project Description
 Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of my Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
 
