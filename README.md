@@ -86,9 +86,8 @@ const ListFilters = (props) => {
 
 export default ListFilters;
 ```
-
+<br/>
 <a name="finalthoughts"/>
-
 ## Final Thoughts
 Since this was an independent project I took on many different roles in the development process. It was up to me to gather requirements and to select the tools needed. A lot of time went into the design and creating detailed mockups. This is crucial for the implementation phase when the focus should be on writing good code, not on how the app should look.<br/>
 <br/>
