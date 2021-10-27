@@ -35,7 +35,7 @@ The images below are screenshots of the map, discover, and home screen<br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
 <a name="demo"/>
 ## Reusable Component Demo
-The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The filter list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. The reusable component, ```<ListItem />``` gets imported and can be reused any number of times. Each title within the data object will be rendered as a list of selectable buttons. With the useState hook, state variables can be used without the need for a class component.
+The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The filter list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. The reusable component, ```<ListItem />``` gets imported into App.js and can be reused any number of times. Each title within the data object will be rendered as a list of selectable buttons. With the useState hook, state variables can be used without the need for a class component.
 ```javascript
 // App.js
 import React, { useState } from 'react';
