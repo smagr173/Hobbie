@@ -87,7 +87,7 @@ const App = () => {
 
 export default App;
 ```
-Each item in the list is passed to the ```<ListItem />``` component where the title is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives the title, textColor, and onPress function as properties.
+Each item in the data object is passed to the ```<ListItem />``` component where the title is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives the title, textColor, and onPress function as properties.
 ```javascript
 // ListItem.js
 import React from 'react';
