@@ -37,6 +37,9 @@ The images below are screenshots of the map, discover, and home screen<br/>
 Makes use of a given list of categories to render selectable buttons. A reusable component, ```<ListItem />``` is imported which can be used in other screens. With the useState hook, state variables can be used without the need for a class component.
 ```javascript
 // App.js
+import React, { useState } from 'react';
+import { FlatList } from 'react-native';
+
 import ListItem from '../components/ListItem';
 
 const DATA = [
@@ -59,6 +62,7 @@ const App = () => {
   const [selected, setSelected] = useState(null);
 
   const renderList = ({ item }) => {
+    // If the item in the list is selected then text color is set to 'red'
     const color = item.id === selected ? 'red' : 'gray';
 
     return (
