@@ -2,6 +2,7 @@
 Create, share, and discover collections of rare or noteworthy possessions<br/>
 - Implemented using React Native, TypeScript, and Node.js
 - Makes use of React Hooks and functional components
+- Community libraries such as Redux, React Navigation, and React Spring were used as well
 - Sizes well across various devices, including the new iPhone 13
 ## Table of Contents
 &nbsp; &nbsp;1. [Showcase](#showcase)
