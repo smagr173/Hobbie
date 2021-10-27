@@ -35,7 +35,7 @@ The images below are screenshots of the map, discover, and home screen<br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
 <a name="demo"/>
 ## Reusable Component Demo
-Makes use of a given data object to render selectable buttons. A reusable component, ```<ListItem />``` is imported which can be used in other screens. With the useState hook, state variables can be used without the need for a class component.
+The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The reusable component, ```<ListItem />``` gets imported and can perform the same operation in other screens. Each title within the data object will be rendered as a list of selectable buttons. With the useState hook, state variables can be used without the need for a class component.
 ```javascript
 // App.js
 import React, { useState } from 'react';
