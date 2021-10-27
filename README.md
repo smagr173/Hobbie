@@ -72,7 +72,7 @@ const App = () => {
         onPress={() => setSelected(item.id)}
       />
     );
-  };
+  };  // End renderList
 
   return (
     <FlatList
