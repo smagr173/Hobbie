@@ -83,6 +83,8 @@ const App = () => {
     />
   );
 };
+
+export default App;
 ```
 Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives this data as props.
 ```javascript
