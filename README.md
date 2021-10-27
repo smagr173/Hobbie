@@ -37,23 +37,34 @@ The images below are screenshots of the map, discover, and home screen<br/>
 Makes use of a given list of categories to render selectable buttons. A reusable component, ```<ListItem />``` is imported which can be used in other screens. With the useState hook, state variables can be used without the need for a class component.
 ```javascript
 // App.js
-import React, { useState } from 'react';
-import { FlatList } from 'react-native';
+import ListItem from '../components/ListItem';
 
-import { data } from '../data';
-import ListFilters from '../components/ListFilters';
+const DATA = [
+  {
+    id: '56aed5-3ad53abb28ba',
+    title: 'Popular',
+  },
+  {
+    id: '6a4f8-fbd91aa97f63',
+    title: 'Comics',
+  },
+  {
+    id: '9bd96-145571e29d72',
+    title: 'NFL Cards',
+  },
+];
 
 const App = () => {
   // Holds the unique identifier of the selected button
-  const [selected, setSelected] = useState('1');
+  const [selected, setSelected] = useState(null);
 
   const renderList = ({ item }) => {
-    // If the current item in the list is selected then text color is set to 'red'
-    const textColor = item.id === selected ? 'red' : 'gray';
+    const color = item.id === selected ? 'red' : 'gray';
+
     return (
-      <ListFilters 
-        category={item.title}
-        textColor={textColor}
+      <ListItem 
+        item={item}
+        textColor={{ color }}
         onPress={() => setSelected(item.id)}
       />
     );
@@ -61,10 +72,10 @@ const App = () => {
 
   return (
     <FlatList
-      horizontal={true}
-      data={data}
+      data={DATA}
       renderItem={renderList}
       keyExtractor={(item) => item.id}
+      extraData={selected}
     />
   );
 };
