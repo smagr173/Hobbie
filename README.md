@@ -86,21 +86,19 @@ const App = () => {
 ```
 Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives this data as props.
 ```javascript
-// ListFilters.js
+// ListItem.js
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const ListFilters = (props) => {
+const ListItem = ({ item, onPress, textColor }) => {
   return (
-    <TouchableOpacity onPress={props.onPress}>
-      <Text style={{color: props.textColor}}>
-        {props.category}
-      </Text>
+    <TouchableOpacity onPress={onPress}>
+      <Text style={[styles.title, textColor]}>{item.title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default ListFilters;
+export default ListItem;
 ```
 
 <a name="finalthoughts"/>
