@@ -34,7 +34,7 @@ The images below are screenshots of the map, discover, and home screen<br/>
 ![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
 <a name="demo"/>
 ## Reusable Component Demo
-Makes use of a given list of categories to render selectable buttons. A reusable component, ```<ListItem />``` is imported which can be used in other screens. With the useState hook, state variables can be used without the need for a class component.
+Makes use of a given data object to render selectable buttons. A reusable component, ```<ListItem />``` is imported which can be used in other screens. With the useState hook, state variables can be used without the need for a class component.
 ```javascript
 // App.js
 import React, { useState } from 'react';
@@ -86,7 +86,7 @@ const App = () => {
 
 export default App;
 ```
-Each item in the list is passed to this component where it is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives this data as props.
+Each item in the list is passed to the ```<ListItem />``` component where the title is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives the title, textColor, and onPress function as properties.
 ```javascript
 // ListItem.js
 import React from 'react';
