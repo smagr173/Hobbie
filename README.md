@@ -1,5 +1,5 @@
 # Hobbie Mobile App
-Create, share, and discover collections of rare or noteworthy possessions
+Create, share, and discover collections of rare or noteworthy possessions<br/>
 - Implemented using React Native, TypeScript, and Node.js
 - React Hooks and functional components
 - Community libraries such as Redux, React Navigation, and React Spring were used as well
@@ -31,10 +31,7 @@ Next, a map feature was implemented allowing the user to locate nearby auction h
 The final feature is an activity feed that displays events from the user's own usage or any accounts the user has followed. This includes any new additions to a collection, item trades, locations visited, and milestones reached.
 
 For image captions, point out behavior. For example, “As the user scrolls, the search bar is hidden or displayed, depending on the direction.”
-The images below are screenshots of the map, discover, and home screen<br/>
-<br/>
-![MapScreen](https://johndan2354.github.io/BBMobileImages/Map.PNG) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![ComicsScreen](https://johndan2354.github.io/BBMobileImages/Comics.PNG)
-<a name="demo"/>
+
 ## Reusable Component Demo
 The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The filter list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. Please refer the [showcase](#showcase) section above for a visual reference of this feature.<br/><br/>
 The reusable component, ```<ListItem />``` gets imported into App.js and can be reused any number of times. Each title within the data object will be rendered as a list of selectable buttons. With the useState hook, state variables can be used without the need for a class component.
