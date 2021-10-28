@@ -17,7 +17,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 ## Showcase
 ![collections](https://johndan2354.github.io/hobbieImages/collections.PNG) &nbsp; &nbsp; &nbsp; ![discComics](https://johndan2354.github.io/hobbieImages/discComics.PNG)
 <br/><br/>
-![mapHidden](https://johndan2354.github.io/hobbieImages/mapHidden.PNG)
+![mapHidden](https://johndan2354.github.io/hobbieImages/mapHidden.PNG) &nbsp; &nbsp; &nbsp; ![mapGif](https://johndan2354.github.io/hobbieImages/mapGif.gif)
 <br/>
 <a name="description"/>
 
