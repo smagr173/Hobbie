@@ -1,5 +1,5 @@
 # Hobbie Mobile App
-Create, share, and discover collections of rare or noteworthy possessions<br/>
+Create, share, and discover collections of rare or noteworthy possessions
 - Implemented using React Native, TypeScript, and Node.js
 - React Hooks and functional components
 - Community libraries such as Redux, React Navigation, and React Spring were used as well
