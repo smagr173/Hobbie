@@ -15,6 +15,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 <a name="showcase"/>
 ## Showcase
+![collections](https://johndan2354.github.io/hobbieImages/collections.PNG)
 <br/>
 <a name="description"/>
 
