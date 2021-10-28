@@ -15,7 +15,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 <a name="showcase"/>
 ## Showcase
-![collections](https://johndan2354.github.io/hobbieImages/collections.PNG) &nbsp; &nbsp; &nbsp; ![collections](https://johndan2354.github.io/hobbieImages/discComics.PNG)
+![collections](https://johndan2354.github.io/hobbieImages/collections.PNG) &nbsp; &nbsp; &nbsp; ![discComics](https://johndan2354.github.io/hobbieImages/discComics.PNG)
 <br/>
 <a name="description"/>
 
@@ -29,8 +29,6 @@ Secondly, the user can explore new items from the community database. This scree
 Next, a map feature was implemented allowing the user to locate nearby auction houses, yard sales, hobby stores, and flea markets. The type of locations displayed can be selected using a list of selectable filters. Alternatively, a search bar can be used to find a specific business or location. These features are actually reusable functional components used in the discover screen as well. Further discussion about these reusable components can be found in the following section - [Reusable Component Demo](#demo)
 
 The final feature is an activity feed that displays events from the user's own usage or any accounts the user has followed. This includes any new additions to a collection, item trades, locations visited, and milestones reached.
-
-For image captions, point out behavior. For example, “As the user scrolls, the search bar is hidden or displayed, depending on the direction.”
 
 ## Reusable Component Demo
 The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The filter list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. Please refer the [showcase](#showcase) section above for a visual reference of this feature.<br/><br/>
