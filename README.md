@@ -19,7 +19,6 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/><br/>
 ![mapHidden](https://johndan2354.github.io/hobbieImages/mapHidden.PNG) &nbsp; &nbsp; &nbsp;
 <img src="https://johndan2354.github.io/hobbieImages/mapVid.gif" width="373" height="663" />
-![](https://johndan2354.github.io/hobbieImages/mapVid.gif)
 <br/>
 <a name="description"/>
 
