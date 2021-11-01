@@ -15,8 +15,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <br/>
 <a name="showcase"/>
 ## Showcase
-<img src="https://johndan2354.github.io/hobbieImages/collections.PNG" width="300" height="530" /> &nbsp; &nbsp; <img src="https://johndan2354.github.io/hobbieImages/discComics.PNG" width="300" height="530" />
-<br/><br/>
+<img src="https://johndan2354.github.io/hobbieImages/collections.PNG" width="300" height="530" /> &nbsp; &nbsp; <img src="https://johndan2354.github.io/hobbieImages/discComics.PNG" width="300" height="530" /> &nbsp; &nbsp; 
 <img src="https://johndan2354.github.io/hobbieImages/mapHidden.PNG" width="300" height="530" /> &nbsp; &nbsp; <img src="https://johndan2354.github.io/hobbieImages/mapVid.gif" width="300" height="530" />
 <a name="description"/>
 
