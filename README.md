@@ -18,6 +18,8 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 ![collections](https://johndan2354.github.io/hobbieImages/collections.PNG) &nbsp; &nbsp; &nbsp; ![discComics](https://johndan2354.github.io/hobbieImages/discComics.PNG)
 <br/><br/>
 ![mapHidden](https://johndan2354.github.io/hobbieImages/mapHidden.PNG) &nbsp; &nbsp; &nbsp; <img src="https://johndan2354.github.io/hobbieImages/mapVid.gif" width="373" height="663" />
+<br/><br/>
+<img src="https://johndan2354.github.io/hobbieImages/mapHidden.PNG" width="300" height="530" /> &nbsp; &nbsp; &nbsp; <img src="https://johndan2354.github.io/hobbieImages/mapVid.gif" width="300" height="530" />
 <a name="description"/>
 
 ## Project Description
