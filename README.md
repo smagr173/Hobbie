@@ -1,4 +1,4 @@
-# Hobbie Mobile App
+# Hobbie - Collect Socially
 Create, share, and discover collections of rare or noteworthy possessions<br/>
 - Implemented using React Native, TypeScript, and Node.js
 - React Hooks and functional components
