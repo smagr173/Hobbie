@@ -1,9 +1,9 @@
 # Hobbie: Collect Socially
 Create, share, and discover collections of rare or noteworthy possessions<br/>
-- Implemented using JavaScript (React Native), NPM, and Expo
+- Implemented using React Native and Expo
 - React Hooks and functional components
 - Community libraries such as Redux, React Navigation, and React Spring
-- Sizes well across various devices, including the new iPhone 13
+- Sizes well across various devices
 ## Table of Contents
 &nbsp; &nbsp;1. [Showcase](#showcase)
 <br/>
