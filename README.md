@@ -63,9 +63,9 @@ export default function App() {
 }
 
 ```
-The DefaultFlatList component accepts two props:
-&nbsp; &nbsp;- data: array of data, in this case it contains the categories
-&nbsp; &nbsp;- renderItem: function that returns a component to render each item in the array
+The DefaultFlatList component accepts two props:<br/>
+&nbsp; &nbsp;- data: array of data, in this case it contains the categories<br/>
+&nbsp; &nbsp;- renderItem: function that returns a component to render each item in the array<br/>
 ```javascript
 // DefaultFlatList.js
 import React from 'react';
