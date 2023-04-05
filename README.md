@@ -33,7 +33,7 @@ The final feature is an activity feed that displays events from the user's own u
 
 ## Reusable Component Demo
 The code snippet below is a simplified example of the category component implemented in both the Discover and Map screen. The category list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. Please refer the [showcase](#showcase) section above for a visual reference of this feature.<br/><br/>
-The reusable component, ```<DefaultFlatList />``` gets imported into App.js and can be called any number of times. It is used to render a list of data with each item rendered using the ```renderItem``` function. The ```keyExtractor``` prop is also used to provide a unique key for each item in the list.
+The reusable component, ```<DefaultFlatList />``` gets imported into App.js and can be called any number of times. It is used to render a list of data with each item rendered using the ```renderItem``` function. The ```keyExtractor``` prop is also used to provide a unique key for each item.
 ```javascript
 // App.js
 import React from 'react';
@@ -63,9 +63,9 @@ export default function App() {
 }
 
 ```
-The DefaultFlatList component accepts two props:<br/>
-&nbsp; &nbsp;- data: array of data, in this case it contains the categories<br/>
-&nbsp; &nbsp;- renderItem: function that returns a component to render each item in the array<br/>
+The ```DefaultFlatList``` component accepts two props:<br/>
+&nbsp; &nbsp;**- data:** array of data, in this case it contains the categories<br/>
+&nbsp; &nbsp;**- renderItem:** function that returns a component to render each item in the array<br/>
 ```javascript
 // DefaultFlatList.js
 import React from 'react';
