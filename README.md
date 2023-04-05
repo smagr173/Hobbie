@@ -48,7 +48,7 @@ const data = [
 
 const renderItem = ({ item }) => {
   return (
-    <View style={styles.item}>
+    <View>
       <Text>{item.title}</Text>
     </View>
   );
@@ -56,7 +56,7 @@ const renderItem = ({ item }) => {
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View>
       <DefaultFlatList data={data} renderItem={renderItem} />
     </View>
   );
