@@ -1,9 +1,9 @@
 # Hobbie: Collect Socially
 Create, share, and discover collections of rare or noteworthy possessions<br/>
-- Implemented using React Native and Ruby on Rails
+- Implemented using React Native, MySQL, and Ruby on Rails
 - React Hooks and functional components
 - External libraries such as Redux, React Navigation, and React Spring
-- Sizes well across various devices
+- Accesibility considerations including text upscaling and internationalization
 ## Table of Contents
 &nbsp; &nbsp;1. [Showcase](#showcase)
 <br/>
