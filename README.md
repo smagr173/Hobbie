@@ -1,6 +1,6 @@
 # Hobbie: Collect Socially
 Create, share, and discover collections of rare or noteworthy possessions<br/>
-- Implemented using React Native and Expo
+- Implemented using React Native and Ruby on Rails
 - React Hooks and functional components
 - External libraries such as Redux, React Navigation, and React Spring
 - Sizes well across various devices
@@ -21,7 +21,7 @@ Create, share, and discover collections of rare or noteworthy possessions<br/>
 <a name="description"/>
 
 ## Project Description
-Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of the Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices.
+Welcome! First off, thank you for taking the time to view this project. This repository will describe and show the features of the Hobbie mobile app. It was created using React Native, which makes it compatible with both iOS and Android devices. The server-side portions were implemented using Ruby on Rails.
 
 There are four major features of the app aside from the user authentication. The first of which allows the user to catalog and view their personal collections. Items can be added or removed as the user builds their physical collection. These collections are then displayed in a stack layout which the user can swipe through. The user can also manage their profile from this screen.
 
@@ -94,4 +94,4 @@ During development real mobile devices were used, including the iPhone 8, X, 13,
 Many new features were added to React when I first started this project. React Hooks were new to me at the time, but I quickly got familiar with useState, useEffect, and useRef. I found the use of Hooks to be a great addition to React. The code looks cleaner than the equivalent class component and is easier to read. Another way to write more concise code was made available when JavaScript arrow function syntax was introduced in ES6.
 <br/><br/>
 **Expanded Skillset -**
-I was exposed to several tools that I had little to no experience with, including Animations and Redux for state management. I familiarized myself with a handful of animation libraries so I could implement a hideable header and search bar that can shrink/expand. The second tool, Redux, was very useful in the user authentication feature. Redux made it possible to store login data for use in other components that otherwise would not have a safe and reliable way to access said data. TypeScript was also new for me and was only implemented in a handful of files. I mostly wanted to get comfortable with the syntax since I was not compelled to use it throughout the whole project. I found TypeScript code difficult to read and there just wasn't much of a need for it on a project of this scale. However, in a business or large organization the benefits of TypeScript become more apparent.<br/>
+I was exposed to several tools that I had little to no experience with, including Animations and Redux for state management. I familiarized myself with a handful of animation libraries so I could implement a hideable header and search bar that can shrink/expand. The second tool, Redux, was very useful in the user authentication feature. Redux made it possible to store login data for use in other components that otherwise would not have a safe and reliable way to access said data.<br/>
