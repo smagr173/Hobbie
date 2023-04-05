@@ -32,74 +32,56 @@ Next, a map feature was implemented allowing the user to locate nearby auction h
 The final feature is an activity feed that displays events from the user's own usage or any accounts the user has followed. This includes any new additions to a collection, item trades, locations visited, and milestones reached.
 
 ## Reusable Component Demo
-The code snippet below is a simplified example of the filter component implemented in both the Discover and Map screen. The filter list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. Please refer the [showcase](#showcase) section above for a visual reference of this feature.<br/><br/>
-The reusable component, ```<ListItem />``` gets imported into App.js and can be reused any number of times. Each title within the data object will be rendered as a list of selectable buttons. With the useState hook, state variables can be used without the need for a class component.
+The code snippet below is a simplified example of the category component implemented in both the Discover and Map screen. The category list located beneath the search bar is displayed and manipulated the same way no matter where it is called. Data received by the component is the only part that will vary. Please refer the [showcase](#showcase) section above for a visual reference of this feature.<br/><br/>
+The reusable component, ```<DefaultFlatList />``` gets imported into App.js and can be called any number of times. It is used to render a list of data with each item rendered using the ```renderItem``` function. The ```keyExtractor``` prop is also used to provide a unique key for each item in the list.
 ```javascript
 // App.js
-import React, { useState } from 'react';
-import { FlatList } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import DefaultFlatList from '../components/DefaultFlatList';
 
-import ListItem from '../components/ListItem';
-
-const DATA = [
-  {
-    id: '56aed5-3ad53abb28ba',
-    title: 'Popular',
-  },
-  {
-    id: '6a4f8-fbd91aa97f63',
-    title: 'Comics',
-  },
-  {
-    id: '9bd96-145571e29d72',
-    title: 'NFL Cards',
-  },
+const data = [
+  { id: 1, title: 'Popular' },
+  { id: 2, title: 'Comics' },
+  { id: 3, title: 'NFL Cards' },
 ];
 
-const App = () => {
-  // Holds the unique identifier of the selected button
-  const [selected, setSelected] = useState(null);
+const renderItem = ({ item }) => {
+  return (
+    <View style={styles.item}>
+      <Text>{item.title}</Text>
+    </View>
+  );
+};
 
-  const renderList = ({ item }) => {
-    // If the item in the list is selected then text color is set to 'red'
-    const color = item.id === selected ? 'red' : 'gray';
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <DefaultFlatList data={data} renderItem={renderItem} />
+    </View>
+  );
+}
 
-    return (
-      <ListItem 
-        item={item}
-        textColor={{ color }}
-        onPress={() => setSelected(item.id)}
-      />
-    );
-  }; // End renderList
+```
+The DefaultFlatList component accepts two props:
+&nbsp; &nbsp;- data: array of data, in this case it contains the categories
+&nbsp; &nbsp;- renderItem: function that returns a component to render each item in the array
+```javascript
+// DefaultFlatList.js
+import React from 'react';
+import { FlatList } from 'react-native';
 
+const DefaultFlatList = ({ data, renderItem }) => {
   return (
     <FlatList
-      data={DATA}
-      renderItem={renderList}
-      keyExtractor={(item) => item.id}
-      extraData={selected}
+      data={data}
+      renderItem={renderItem}
+      keyExtractor={(item) => item.id.toString()}
     />
   );
 };
 
-export default App;
-```
-Each item in the data object is passed to the ```<ListItem />``` component where the title is rendered and formatted. Depending on what button is selected, the color of the text will change to red. The component receives the title, textColor, and onPress function as properties.
-```javascript
-// ListItem.js
-import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
-
-const ListItem = ({ item, onPress, textColor }) => {
-  return (
-    <TouchableOpacity onPress={onPress}>
-      <Text style={[styles.title, textColor]}>{item.title}</Text>
-    </TouchableOpacity>
-  );
-};
-
-export default ListItem;
+export default DefaultFlatList;
 ```
 
 <a name="finalthoughts"/>
