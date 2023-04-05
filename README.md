@@ -2,7 +2,7 @@
 Create, share, and discover collections of rare or noteworthy possessions<br/>
 - Implemented using React Native and Expo
 - React Hooks and functional components
-- Community libraries such as Redux, React Navigation, and React Spring
+- External libraries such as Redux, React Navigation, and React Spring
 - Sizes well across various devices
 ## Table of Contents
 &nbsp; &nbsp;1. [Showcase](#showcase)
