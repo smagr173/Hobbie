@@ -6,6 +6,7 @@ module SharedHelper
   end
   
   def shared_search_values(group_name, shared_object)
+    # Grab search values from collection object
     search_values = [group_name]
     if shared_object.user.present?
       search_values << shared_object.user.email
