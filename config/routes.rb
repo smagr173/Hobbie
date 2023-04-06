@@ -67,16 +67,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/achievement_awards', to: 'achievement_candidates#completed_list', as: 'achievement_awardees'
-
-  resources :achievement_levels, except: [:new, :create, :show, :destroy]
-
-  resources :system_admins,           except: [:show] do
-    collection do
-      get :system_admins_for_showing
-    end
-  end
-
   resources :labels, only: [:destroy, :edit, :update] do
     member do
       get :assign_item, action: :assign_item_ui
@@ -111,29 +101,9 @@ Rails.application.routes.draw do
     get "create_project_user/:user_id" => "project_users#create", as: "create_project_user"
   end
 
-  resources :user_achievements, except: [:destroy] do
-    collection do
-      exportable_methods.call
-    end
-
-    member do
-      exportable_methods.call
-      get :generate_status
-      post :bulk_create
-      post :bulk_upgrade
-      post :use_cert_avatar
-    end
-  end
-
   get '/achievement_awards', to: 'achievement_candidates#completed_list', as: 'achievement_awardees'
 
   resources :achievement_levels, except: [:new, :create, :show, :destroy]
-
-  resources :system_admins,           except: [:show] do
-    collection do
-      get :system_admins_for_showing
-    end
-  end
 
   resources :collection_users,         only: [:destroy]
 
