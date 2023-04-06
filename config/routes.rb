@@ -98,41 +98,6 @@ Rails.application.routes.draw do
       get :users_assigned
     end
 
-    get "create_project_user/:user_id" => "project_users#create", as: "create_project_user"
-  end
-
-  get '/achievement_awards', to: 'achievement_candidates#completed_list', as: 'achievement_awardees'
-
-  resources :achievement_levels, except: [:new, :create, :show, :destroy]
-
-  resources :collection_users,         only: [:destroy]
-
-  creates_bulk_collectible.call
-  links_collectible_pdfs.call
-
-  resources :collection,              only: [:show, :edit, :destroy] do
-    resources :alerts,                only: [:index, :new, :create, :update]
-    resources :milestones,            only: [:index, :new, :create, :update]
-    resources :collectible,           only: [:index, :new, :create] do
-      collection do
-        exportable_methods.call
-      end
-    end
-    resources :collection_users,         only: [:destroy]
-
-    creates_bulk_collectible.call
-    links_collectible_pdfs.call
-    
-    member do
-      get :generate_status
-      get :move_collectible
-      get :render_collectible_row
-      get :collectible_tag_columns
-      get :collectible_tags
-      get :templates_assigned
-      get :users_assigned
-    end
-
     get "create_collection_user/:user_id" => "collection_users#create", as: "create_collection_user"
   end
 
