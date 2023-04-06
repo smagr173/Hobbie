@@ -1,6 +1,3 @@
-# File is auto-generated from the current state of the database. Rather than
-# editing this file, please use the migrations feature of Active Record to
-# progressively modify your database, then regenerate this schema definition.
 
 ActiveRecord::Schema.define(version: 2023_10_11) do
 
@@ -9,11 +6,21 @@ ActiveRecord::Schema.define(version: 2023_10_11) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "permission_level"
-    t.integer "status", default: 1
-    t.integer "flags", default: 0, null: false
-    t.index ["user_id"], name: "index_company_users_on_user_id"
   end
 
+  create_table "collection_dependencies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "collection_id", null: false
+    t.integer "depends_on_collection_id", null: false
+    t.index ["collection_id", "depends_on_collection_id"], name: "collection_depends_on_collection", unique: true
+  end
+  
+  create_table "collections", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", limit: 64, null: false
+    t.string "description", limit: 256
+    t.integer "root_collection_id", default: 0
+    t.string "category", limit: 128
+  end
+  
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "title", null: false
@@ -30,29 +37,12 @@ ActiveRecord::Schema.define(version: 2023_10_11) do
     t.integer "flags", default: 0
   end
 
-  create_table "feature_dependencies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "feature_id", null: false
-    t.integer "dependent_on_feature_id", null: false
-    t.index ["feature_id", "dependent_on_feature_id"], name: "feature_dependencies_on_feature_and_dependency", unique: true
-  end
-
-  create_table "features", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name", limit: 64, null: false
-    t.string "description", limit: 256
-    t.string "internal_name", limit: 64, null: false
-    t.integer "parent_feature_id", default: 0
-    t.integer "flags", default: 0
-    t.string "category", limit: 128
-    t.index ["internal_name"], name: "index_features_on_internal_name", unique: true
-  end
-
   create_table "file_asset_associations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "file_asset_id", null: false
     t.bigint "target_id", null: false
     t.string "target_type", null: false
     t.integer "position", default: 0, null: false
-    t.index ["file_asset_id"], name: "index_file_asset_associations_on_file_asset_id"
-    t.index ["target_type", "target_id", "file_asset_id"], name: "index_file_asset_associations_target_file", unique: true
+    t.index ["target_type", "target_id", "file_asset_id"], name: "index_file_asset_association", unique: true
   end
 
   create_table "file_assets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -94,19 +84,12 @@ ActiveRecord::Schema.define(version: 2023_10_11) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "password_digest"
     t.string "avatar_file_name"
     t.string "avatar_content_type"
-    t.integer "avatar_file_size"
-    t.datetime "avatar_updated_at"
     t.datetime "last_login_at"
     t.string "single_login_key", limit: 96
     t.string "reset_token", limit: 128
     t.datetime "reset_token_expires_at"
-    t.string "api_login_key", limit: 96
-    t.index ["email"], name: "users_on_email", unique: true
   end
 
 end
