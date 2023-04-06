@@ -52,7 +52,7 @@ Rails.application.routes.draw do
 
     resources :achievement_levels, only: [:index]
   end
-
+	
   resources :user_achievements, except: [:destroy] do
     collection do
       exportable_methods.call
@@ -67,12 +67,8 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :labels, only: [:destroy, :edit, :update] do
-    member do
-      get :assign_item, action: :assign_item_ui
-      post :assign_item
-      get :assigned_items
-    end
-  end
+  get '/achievement_awards', to: 'achievement_candidates#completed_list', as: 'achievement_awardees'
+
+  resources :achievement_levels, except: [:new, :create, :show, :destroy]
 
 end
