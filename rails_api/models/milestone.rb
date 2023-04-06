@@ -23,15 +23,11 @@ class Milestone < ActiveRecord::Base
   private
 
   def check_items
-    if type != "dropdown" || self.items.is_a?(String)
-      self.items = nil
-    else
       @filled_items = []
       self.items.each_with_index do |item, index|
         @filled_items << item unless item.strip === ""
       end
       self.items = @filled_items.empty? ? nil : @filled_items
-    end
   end
 
 end
