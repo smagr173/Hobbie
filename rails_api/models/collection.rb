@@ -12,13 +12,6 @@ class Collection < ActiveRecord::Base
   validates       :company_id, presence: true
   
   class << self
-    def find_recent_last_update(collection_id)
-      recent_audit = Audit.select([:created_at, :user_id]).where(owner_type: 'Collection', owner_id: collection_id).order(:created_at).last
-      return Hobbie::Cache::Models::CollectionCache.update_context_from_audit(recent_audit) if recent_audit
-      
-      Hobbie::Cache::Models::CollectionCache.update_context_with(Collection.select(:updated_at).where(id: collection).first.try(:updated_at), 0)
-    end
-  end
 
   def last_update
     @last_update ||= Hobbie::Cache::Models::CollectionCache.last_update(self.id, default_updated_at: self.updated_at)
@@ -40,7 +33,6 @@ class Collection < ActiveRecord::Base
       self.items.each do |project|
         begin
           project.users << user
-        rescue ActiveRecord::RecordNotUnique
         end
       end
     end
