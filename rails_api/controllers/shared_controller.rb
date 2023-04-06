@@ -19,8 +19,6 @@ class SharedController
       shared_by_id: current_user.id,
       shared_id: @shared.id
     }
-
-    EmailSharedWithUserWorker.perform_async(options.to_json)
     
     head :ok
   end
