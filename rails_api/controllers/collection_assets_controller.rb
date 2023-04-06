@@ -12,12 +12,7 @@ class CollectionAssetsController < ApplicationController
   def create
     modify_file_param(:file_asset)
     @collection_asset = @container.assets.create(permitted_params.collection_asset)
-    
-    respond_to do |format|
-      format.json {
-        json_data = render_to_string('shared/create_item', layout: 'event', formats: [:js], locals: { adapter: self._adapt_with_items([@collection_asset]) })
-        render json: { response_data: json_data }
-      }
+  
     end
   end
   
