@@ -37,38 +37,16 @@ ActiveRecord::Schema.define(version: 2023_10_11) do
     t.integer "flags", default: 0
   end
 
-  create_table "file_asset_associations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "file_asset_id", null: false
-    t.bigint "target_id", null: false
-    t.string "target_type", null: false
+  create_table "collection_asset_associations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "collection_asset_id", null: false
     t.integer "position", default: 0, null: false
-    t.index ["target_type", "target_id", "file_asset_id"], name: "index_file_asset_association", unique: true
   end
 
-  create_table "file_assets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "file_file_name"
-    t.string "file_content_type"
-    t.integer "file_file_size"
-    t.datetime "file_updated_at"
-    t.string "local_file_file_name"
-    t.string "local_file_content_type"
-    t.integer "local_file_file_size"
-    t.datetime "local_file_updated_at"
+  create_table "collection_assets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "caption"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "integration", default: 0
-    t.integer "flags", default: 0
-  end
-
-  create_table "shared_objects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "shareable_id", null: false
-    t.string "shareable_type", null: false
-    t.integer "permission_level", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "previous_permission_level", default: 999
+    t.integer "tags", default: 0
   end
 
   create_table "user_achievements", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
