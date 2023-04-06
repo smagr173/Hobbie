@@ -2,8 +2,6 @@ class User < ActiveRecord::Base
   include Rails.application.routes.url_helpers
   include ChannelHelpers
 
-  EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
-
   OPTIONS = {
     BANNED: 2,
     NO_LOGIN: 4
