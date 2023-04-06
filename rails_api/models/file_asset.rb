@@ -1,18 +1,12 @@
 class FileAsset < ActiveRecord::Base
   INTEGRATION = {
-    NONE: 0,
-    BACKGROUND_IMAGES: 4,
     ICONS: 5
   }
 
   FLAGS = {
     NONE: 0,
     SYSTEM: 1,
-    MIRROR_SOURCE: 2,
-    MIRROR_TARGET: 4
   }
-
-  URL_MATCHER = /key=file_assets\/files\/([\d\/]+)/
 
   belongs_to :container, polymorphic: true
 
@@ -66,9 +60,6 @@ class FileAsset < ActiveRecord::Base
       end
       mapped_file_asset_id = file_asset_mapping[source_file_asset_id].to_i
       return if mapped_file_asset_id.zero?
-
-      mapped_file_id_partition = ("%09d" % mapped_file_asset_id).scan(/\d{3}/).join(File::SEPARATOR)
-      raw_data.gsub(match[0], { match[0] => "key=file_assets/files/#{mapped_file_id_partition}/"})
     end
   end
 
@@ -93,7 +84,6 @@ class FileAsset < ActiveRecord::Base
   end
 
   def mark_as_mirror_source!
-    raise(ArgumentError, 'Cannot mark a mirror target as a mirror source') if self.mirror_target?
     self.flags = self.flags | FLAGS[:MIRROR_SOURCE]
     self.save!
   end
@@ -108,15 +98,6 @@ class FileAsset < ActiveRecord::Base
 
   def not_mirror_source?
     0 == (FLAGS[:MIRROR_SOURCE] & self.flags)
-  end
-
-  def not_mirror_target?
-    0 == (FLAGS[:MIRROR_TARGET] & self.flags)
-  end
-
-  def on_after_mirror_target_created(source_item, sync_context, sync_options)
-    super
-    self._trigger_upload_of_file
   end
 
   def on_before_mirror_target_created(source_component, sync_context, sync_options)
