@@ -1,5 +1,4 @@
-
-ActiveRecord::Schema.define(version: 2023_10_11) do
+ActiveRecord::Schema.define(version: 2022_03_10_190625) do
 
   create_table "system_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
